@@ -1,4 +1,4 @@
-h1
+/*h1
 {
 	font-size: 50px;
 	color: blue;
@@ -16,11 +16,69 @@ h3
 	height :20px;
 	margin-top: 10px;
 }
-.block2
+#block2
 {
 	background-color:  green;
 }
+*/
 nav
 {
-	background-color:  gray;	
+	display: block;
+	width: 1000px;
+	background-color: gray;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+nav ul li
+{
+	float: left;
+	position: relative;
+	background-color: yellow;
+}
+
+nav ul li a 
+{
+		display: block;
+		width: 250px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+}
+
+nav ul li a:hover
+{
+	background-color: #00cc00;
+	color: #FFF;
+}
+nav ul li ul
+{
+	display: none;
+	width:  250px;
+	text-align: center;
+	z-index: 1;
+}
+nav ul li:hover ul
+{
+	display: block;
+}
+
+.welcome
+{
+	text-align: center;
+	padding: 100px 0;
+}
+
+.welcome h1
+{
+	font-size: 50px;
+	line-height: 60px;
+	color: blue;
+	text-shadow:2px 2px gray;
+}
+
+.welcome p: 
+{
+	font-size: 14px;
+	color: pink;
 }
