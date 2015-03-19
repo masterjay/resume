@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { font-family:微軟正黑體; font-size:16px; color:#555;}
+
+/*header*/
+header {
+	width:100%;
+	padding:20px 0;
+	background:#333;
+	/*position:fixed;*/
+}
+
+header h3{
+	font-size:20px;
+	text-align:center;
+	color:#ccc;
+}
+
+/*選單*/
+nav {
+	display:block;
+	width:540px;
+	height:40px;
+	margin:0 auto; /*置中*/
+	margin-top:15px;
+}	
+nav ul li{
+	position:relative;
+	float:left;
+}
+nav ul li a {
+	display: block;
+	width:180px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	}
+nav ul li a:hover {
+	background:#12a2e7;
+	color:#FFF;}
+
+nav ul li ul {
+	width:180px;
+	text-align:center;
+	display: none; /*子選單預設為隱藏*/
+	position: absolute;
+	top: 100%;
+	border:1px solid #CCC;
+	z-index:1;
+}
+
+nav ul li ul li { background-color:#FFF;}
+nav ul li ul li a{
+	color:#333;
+}
+nav ul li ul li a:hover {}
+nav ul li:hover ul { /*滑鼠移到選單上時，子選單顯示*/
+	display: block;
+	right: 0;
+	left: 0;
+	top: 100%;
+}
+.toggle { display: none;}
+
+
+
+/*歡迎/介紹文字*/
+.welcome {
+	padding:120px 0; /*為區塊設定上下預留的padding */
+	text-align:center; /*區塊內所有文字皆置中*/
+}
+.welcome h1 {
+	font-size:40px;
+	line-height:100px;
+	color:#2b9be7;
+	text-shadow:2px 2px #ccc; /*文字陰影*/
+}
+.welcome p {
+	font-size:14px;
+	color:#999;
+}
+
+/*圖文介紹*/
+.piclist {
+	width:960px;
+	margin:0 auto; /*讓區塊置中*/
+	overflow:hidden; /*當區塊內下了float，上一層的區塊需設置overflow:hidden;，已防止跑位*/
+	margin-bottom:80px;
+	background-color: #ddd
+}
+.picbox{
+	float:left; /*水平排列*/
+	width:300px;
+	height:350px;
+	margin:16px; /*為區塊設定上下左右的margin寬度*/
+	text-align:center;
+}
+.picbox h3{
+	font-size:20px; line-height:60px; color:#666;
+}
+.picbox p {}
+
+/*更多按鈕*/
+a.morebtn {
+	clear:both; /*當區塊內下了float，下一層的區塊需設置clear:both，將浮動清除*/
+	display:block;
+	width:150px;
+	height:30px;
+	margin:0 auto; /*讓區塊置中*/
+	line-height:30px;
+	text-align:center;
+	background-color:#2b9be7;
+	color:#FFF;
+}
+a.morebtn:hover { background-color:#0066CC;}
+
+
+/*更多按鈕_沒有置中的*/
+a.morebtnL {
+	clear:both;
+	display:block;
+	width:150px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background-color:#2b9be7;
+	color:#FFF;
+}
+a.morebtnL:hover { background-color:#0066CC;}
+
+/*圖片背景介紹文字*/
+.picbg {
+	padding:150px 0;
+	color:#FFF;
+	font-size:20px;
+	line-height:30px;
+	text-align:center;
+	background:url(../images/bg2.jpg) no-repeat;
+}
+
+/*Blog式左右欄位*/
+.blogwrap {
+	width:1000px; /*設定區塊寬度*/
+	margin:0 auto; /*讓區塊置中*/
+	overflow:hidden;
+	margin-top:80px;
+	margin-bottom:80px;
+}
+
+/*左欄*/
+article {
+	float:left; /*區塊靠左浮動*/
+	width:700px;
+}
+
+/*左欄內文章區塊*/
+section {
+	padding:20px 0; /*向內留白*/
+}
+section h3{
+	font-size:22px;
+	line-height:40px;
+	margin-top:20px;
+}
+section p {
+	margin-bottom:20px;
+}
+
+/*分隔線*/
+hr {
+	border:0;
+	height:1px;
+	background-color:#CCC;
+}
+
+/*右欄*/
+aside {
+	float:right; /*區塊靠右浮動*/
+	width:260px;
+	margin-left:40px; /*讓右欄區塊與左欄之間有留空*/
+	margin-top:20px; /*使之與左欄對齊*/
+}
+
+aside h3 {
+	font-size:20px; line-height:30px;
+}
+
+aside ul li{
+	list-style:disc inside;
+	line-height:30px;
+}
+
+footer {
+	clear:both;
+	background-color:#eee;
+	text-align:center;
+	padding:80px 0;
+}

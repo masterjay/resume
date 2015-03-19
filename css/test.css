@@ -58,6 +58,7 @@ nav ul li ul
 	text-align: center;
 	z-index: 1;
 }
+
 nav ul li:hover ul
 {
 	display: block;
@@ -87,6 +88,24 @@ nav ul li:hover ul
 section, article {
 	text-align: center;
 }
+
+/*歡迎/介紹文字*/
+.welcome {
+	padding:120px 0; /*為區塊設定上下預留的padding 內編劇上下設定為120 */
+	text-align:center; /*區塊內所有文字皆置中*/
+}
+.welcome h1 {
+	font-size:40px;
+	line-height:100px;
+	color:#2b9be7;
+	text-shadow:2px 2px #ccc; /*文字陰影*/
+}
+.welcome p {
+	font-size:14px;
+	color:#999;
+}
+
+
 
 
 /* Icon */

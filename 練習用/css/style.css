@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { font-family:微軟正黑體; font-size:16px; color:#555;}
+
+/*header*/
+header {
+	width:100%;
+	padding:20px 0;
+	background:#333;
+	/*position:fixed;*/
+}
+
+header h3{
+	font-size:20px;
+	text-align:center;
+	color:#ccc;
+}
+
+/*選單*/
+nav {
+	display:block;
+	width:540px;
+	height:40px;
+	margin:0 auto; /*置中*/
+	margin-top:15px;
+}	
+nav ul li{
+	position:relative;
+	float:left;
+}
+nav ul li a {
+	display: block;
+	width:180px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	}
+nav ul li a:hover {
+	background:#12a2e7;
+	color:#FFF;}
+
+nav ul li ul {
+	width:180px;
+	text-align:center;
+	display: none; /*子選單預設為隱藏*/
+	position: absolute;
+	top: 100%;
+	border:1px solid #CCC;
+	z-index:1;
+}
+
+nav ul li ul li { background-color:#FFF;}
+nav ul li ul li a{
+	color:#333;
+}
+nav ul li ul li a:hover {}
+nav ul li:hover ul { /*滑鼠移到選單上時，子選單顯示*/
+	display: block;
+	right: 0;
+	left: 0;
+	top: 100%;
+}
+.toggle { display: none;}
+
+
+
+/*歡迎/介紹文字*/
+.welcome {
+	padding:120px 0; /*為區塊設定上下預留的padding 內邊距120 左右0*/
+	text-align:center; /*區塊內所有文字皆置中*/
+}
+.welcome h1 {
+	font-size:40px;
+	line-height:100px;
+	color:#2b9be7;
+	text-shadow:5px 5px #ccc; /*文字陰影*/
+}
+.welcome p {
+	font-size:14px;
+	color:#999;
+}
+
+.piclist
+{
+	width:1000px;
+	margin: 0 auto;
+}
+
+
+
+.picbox
+{
+	float: left;
+	width:300px;
+	height:350px;
+	background-color: #2b9be8;
+	margin: 15px;
+	text-align: center;
+}
+
+
+a.morebtn
+{
+	display: block;
+	width: 150px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #2b9be8;
+	clear: both;
+
+}
+
+.picbg
+{
+	padding:150px 0;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	background:url(../images/bg2.jpg) no-repeat;
+	color: #FFFFFF;
+}
+
+
+article
+{
+	background-color: #2b9be8;
+	float: left;
+	width: 700px;
+}
+
+.blogwrap
+{
+	width: 1000px;
+	margin:  0 auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
