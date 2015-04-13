@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="utd8">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+	<menu>
+		<div id="level1">Level1
+			<div id="ee" class="submenu">Level1-1</div>
+			
+		</div>
+		<div id="level2">Level2
+			<div class="submenu">Level2-1</div>
+			<div class="submenu">Level2-2</div>
+		</div>
+		<div id="level3">Level3
+			<div class="submenu">Level3-1</div>
+			<div class="submenu">Level3-2</div>
+			<div class="submenu">Level3-3</div>
+		</div>
+		
+			
+			
+		
+	</menu>	
+	<div id="test">Click Me</div>
+	<div id="result"></div>
+	<script type="text/javascript">
+		
+		$(function()
+		{
+			$("div.submenu").hide();
+			var isOpened = false;
+			var onClick = function()
+			{
+				if(!isOpened)
+				{
+					$("#level1 .submenu").show(1000);	
+				}
+				else
+				{
+					
+					$("#level1 .submenu").hide(1000);		
+				}
+				isOpened = !isOpened;
+				$("#result").html("eeeee");
+
+			}
+			$("#level1").click(onClick);
+			
+		});
+
+	</script>
+</body>
+</html>
